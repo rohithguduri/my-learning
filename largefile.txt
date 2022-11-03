@@ -1,0 +1,242 @@
+
+HOME
+LEARNING
+VIDEOS
+CLOTHING
+
+Ubuntu
+25 basic Ubuntu Commands
+1 year agoby Adnan Shabbir
+Ubuntu is the most popular Debian-based distribution of Linux Operating System; It was initially released in 2004. Due to its distinctive features, various distros of Linux are developed based on Ubuntu. It is developed and maintained by Canonical Ltd. and a large community of software developers around the globe; Canonical Ltd. is a software company with its origin in the UK, and it has hired staff in several countries to work for Ubuntu. There are several releases of Ubuntu, such as stable release, Long Term Support (LTS), and unstable. The stable and unstable releases are launched every year in April and October, respectively, whereas the long-term support variant is released after two years and is available for the next five years. The latest LTS release is 20.04; it will be available till 2025. Ubuntu supports both Command Line Interface (CLI) and Graphical User Interface (GUI) to perform various tasks on the OS. CLI is the basic way to interact with systems hardware (processor/memory); you can perform all the tasks that GUI can perform. In this article, we will demonstrate the use of 25 basic commands that provide ease to execute various tasks of Ubuntu using CLI.
+What are the basic commands of Ubuntu
+This section contains some basic commands of Ubuntu, so let us start and discuss them one by one. Firstly, you must open the terminal in Ubuntu; press “ctrl+alt+t” from your keyboard to open the terminal.
+
+Command 1: pwd
+This command refers to the present working directory in which you are operating; in simpler words, in which your terminal is open. To check PWD, execute the pwd keyword in your terminal and hit enter; the command of PWD is written below along with the result of that command.
+
+MY LATEST VIDEOS
+
+$ pwd
+
+Command 2: dir
+The dir command is used to print (on the terminal) all the available directories in the present working directory:
+
+
+$ dir
+
+Command 3: ls
+This command is used to list down all the directories and files inside the present working directory (or you can give the path of a specific directory); the ls command can be executed as shown below:
+
+
+$ ls
+
+The ls command supports various flags, and each flag has some specific role in printing the directories or files of the current working directory.
+
+To print the detailed information of the files/directories; the “-al” flag is used with the “ls” command:
+
+
+$ ls -al
+
+
+The “-R” flag will print subdirectories of a directory as well:
+
+$ ls -R
+
+Moreover, to get the hidden files, “-a” flag is used:
+
+
+$ ls -a
+
+
+Command 4: cd
+One of the most used commands of Ubuntu; you can change the directories in the terminal using the “cd” command. For instance, the following command will change the pwd to desktop.
+
+$ cd Desktop
+
+
+There are multiple uses of this command: one can change the present directory to root directory or home directory using this command. When you open a fresh terminal, you are in the home directory.
+
+To change directory to root. For instance, we are in the Desktop directory and want to switch to the root directory:
+
+$ cd /
+
+To change the present directory to the home directory:
+
+$ cd
+
+
+Command 5: touch
+This Ubuntu command can be used to create a new file as well one can use it to change the timestamp of any file; the command given below will create a new text time in pwd:
+
+$ touch file1.txt
+
+If we execute a touch command to create a file, but the file is already created, then it would change the timestamp of that file to the current time; for instance, the command given below will change the timestamp of the file1.txt. you can check that the timestamp has been changed to the current time:
+
+$ touch file1.txt
+
+Command 6: cat
+This command is used to show the content of any file: For instance, the following command will display the content inside “file1.txt”:
+
+$ cat file1.txt
+
+Or you can use this command to save the content of multiples files to one file:
+
+$ cat file1.txt file2.txt > output.txt
+
+Command 7: mkdir
+The above-mentioned command will make a directory in your pwd; for example, the following command will make the directory “new” in pwd.
+
+$ mkdir new
+
+Command 8: rm
+This remove command is used to remove the specific file from a directory; For instance, below mentioned command would remove the “test.txt” file from the pwd:
+
+$ rm test.txt
+
+Or you can remove the empty directory, as the command given below will remove the “test” directory:
+
+$ rmdir test
+
+Command 9: cp
+The cp command will help you to copy any file or folder to any directory;
+
+To copy a file to directory1:
+
+$ cp file1.txt directory1
+
+If you want to copy the complete folder, then;
+
+$ cp new -r directory1
+
+Command 10: mv
+You can use this command to move files around the computer, and you can also rename files or directories inside a specific directory: the command given below will move the “file2.txt” to “directory1”:
+
+$ mv file2.txt directory1
+
+Moreover, the command given below will move the “test1” directory to “directory1”:
+
+$ mv test1 directory1
+
+Command 11: head
+This command helps you to get the first ten lines of a text file; for instance, the following command will help to get the first ten lines of the “file1.text” file:
+
+$ head file1.txt
+
+Command 12: tail
+The tail command is used to get the last ten lines of the text file; the command below will print the ten lines from the bottom of “file1.txt”:
+
+$ tail file1.txt
+Command 13: uname
+You can use the command to get the release number, version of Linux, and much more. The “-a” flag is used to get detailed information.
+
+$ uname -a
+
+Command 14: wget
+You can use the wget command to download the content from the internet; for instance, the following command will download VirtualBox.
+
+$ wget https://download.virtualbox.org/virtualbox/6.1.26/VirtualBox-6.1.26-145957-Win.exe
+
+Command 15: apt-get or -apt
+This is one of the most important and most used commands of Ubuntu that works with Ubuntu Advanced Packaging Tool (APT); you can use this “-apt-get” or “-apt” to install or remove packages, or you can perform other maintenance tasks. The “apt” requires sudo privileges to successfully execute the command.
+
+The syntax stated below will help you to install the required package:
+
+$ sudo apt install [packagename]
+For install to install vlc media player package use:
+
+$ sudo apt install vlc
+
+Or you can remove the package by executing the command given below:
+
+$ sudo apt remove [packagename]
+And to delete vlc media player package:
+
+
+Command 16: history
+The history command shows the list of commands (with numeric numbers) executed:
+
+$ history
+
+And you can execute any of the listed commands. For instance, if you want to execute the 2nd command (which is apt update command), then you have to write “!2” to get the result of that command:
+
+$ !2
+
+Command 17: grep
+With the help of grep, you can search for a pattern in which a specific word lies; for instance, the command given below will print all the lines that contain “20” from “file1.txt”:
+
+$ cat file1.txt | grep 20
+
+Command 18: man
+The man command will help you to get the complete user manual of any specific command; for instance, the following command will list down the detailed usage of the “cat” command:
+
+$ man cat
+
+Command 19: ps
+Using the -ps command, you will be able to get the list of processes.
+
+$ ps
+
+Command 20: zip or unzip
+To convert your files to zip archive; you can get help by using the “gzip” command; moreover, a zipped file can be unzipped using the “gunzip” command:
+
+$ gzip file1.txt
+
+You can unzip the “file1.txt” as shown below:
+
+$ gunzip file1.txt
+
+Command 21: hostname
+This command will print your hostname on the terminal:
+
+$ hostname
+
+Command 22: ping
+You can use the ping command to check the connectivity to your server; for example, the command below will ping to YouTube and also prints the response time:
+
+$ ping youtube.com
+
+Command 23: w
+This command will display the user details that are currently logged into the system:
+
+$ w
+
+Command 24: useradd
+Ubuntu supports multiuser access; if you want to add another user to your system, execute the following command to do so:
+
+$ sudo useradd MIKE
+
+Or you can delete the user also;
+
+$ sudo userdel MIKE
+
+Command 25: passwd
+With the help of the passwd command, you can change the password of your Ubuntu user:
+
+You must pass “username” to “passwd” to change the password of that; for example, the command given below will change the password of user “adnan”.
+
+$ passwd adnan
+
+Conclusion
+Command-line interface (CLI) is the basic utility of any machine; you can use it to perform multiple tasks and can perform all those operations that can be performed using GUI. It is not just a simple app; it is key to every operating system as there are terminal commands behind GUI operations. All in all, CLI can be used to operate the entire operating system without GUI. Like other OS, Ubuntu also contains a terminal that supports hundreds of commands to perform different operations. This article lists down the most used Ubuntu commands and their usage. Every command can perform a specific task and can help you to automate the requested action.
+
+ABOUT THE AUTHOR
+
+Adnan Shabbir
+View all posts
+RELATED LINUX HINT POSTS
+How to Fix “Read-Only File System” Error on Ubuntu
+How To Install Zlib on Ubuntu 22.04
+How To Set Up an SMTP Server on Ubuntu
+How To Restart Apache HTTPD on Ubuntu 22.04
+Ubuntu RADIUS Server Setup
+How to Install Apache Kafka in Ubuntu 22.04
+How to Fix Connection Refused by Port 22 Debian/Ubuntu
+
+Linux Hint LLC, editor@linuxhint.com
+1309 S Mary Ave Suite 210, Sunnyvale, CA 94087
+Privacy Policy and Terms of Use
+
+
+AN ELITE CAFEMEDIA PUBLISHER
+Powered by Slickstream
+search text
